@@ -31,7 +31,18 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.chomp
+  songs.each do |song, location|
+    if song_input == song
+      system 'open' + location
+    end
 
+    if song_input == "list"
+      list(songs)
+      play(songs)
+    else
+      puts "Invalid input, please try again:"
+      puts play(songs)
+    end
 end
 
 def list(songs)
