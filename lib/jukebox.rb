@@ -53,4 +53,5 @@ songs.each do |song, location|
 end
 
 def exit_jukebox
+  puts "Goodbye"
 end
