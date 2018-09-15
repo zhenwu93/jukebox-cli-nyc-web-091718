@@ -35,6 +35,7 @@ def play(songs)
     if song_input == song
       system 'open' + location
     end
+  end
 
     if song_input == "list"
       list(songs)
