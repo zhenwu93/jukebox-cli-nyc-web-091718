@@ -31,11 +31,6 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_input = gets.chomp
-  songs.each do |song, location|
-    if song_input == song
-      play(song)
-    end
-  end
 
     if song_input == "list"
       list(songs)
