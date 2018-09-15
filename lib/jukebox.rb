@@ -33,7 +33,7 @@ def play(songs)
   song_input = gets.chomp
   songs.each do |song, location|
     if song_input == song
-      system 'open' + location
+      play(song)
     end
   end
 
