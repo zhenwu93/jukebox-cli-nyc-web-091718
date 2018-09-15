@@ -34,8 +34,8 @@ def play(songs)
 
 end
 
-def list(song)
-song.each do |song, location|
+def list(songs)
+songs.each do |song, location|
   puts song
   end
 end
