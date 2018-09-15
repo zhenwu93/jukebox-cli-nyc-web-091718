@@ -75,4 +75,3 @@ def run(songs)
     user_command = gets.chomp
     end
   end
-end
